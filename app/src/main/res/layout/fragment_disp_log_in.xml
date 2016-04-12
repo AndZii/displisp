@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.limosys.fragments.DispLogInFragment"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:textSize="22dp"
+            android:singleLine="true"
+            android:id="@+id/log_in_driver_company_name"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/log_in_font_black"
+            android:paddingLeft="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:hint="User ID"
+            android:inputType="number"
+            android:textColor="@color/log_in_font_black"
+            android:background="@color/white_login_background"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@+id/log_in_driver_plate_number"/>
+        <EditText
+            android:textSize="22dp"
+            android:singleLine="true"
+            android:id="@+id/log_in_driver_plate_number"
+            android:layout_marginTop="8dp"
+            android:textColorHint="@color/log_in_font_black"
+            android:paddingLeft="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:hint="Password"
+            android:textColor="@color/log_in_font_black"
+            android:background="@color/white_login_background"
+            android:inputType="textPassword"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@+id/log_in_location"
+            />
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:background="@color/white_login_background"
+            android:id="@+id/log_in_location_spinner"
+            android:layout_marginTop="8dp"
+            android:textSize="22dp"
+            android:layout_width="match_parent"
+            android:textColor="@color/log_in_font_black"
+            android:layout_height="66dp"
+            android:popupBackground="@color/transperent"
+            />
+        <Button
+            android:textSize="22dp"
+            android:id="@+id/log_in_button"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:textColor="@color/white"
+            android:background="@color/button_login"
+            android:text="LOG IN"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
+</FrameLayout>

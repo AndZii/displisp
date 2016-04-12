@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/line_info_box_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/line_tooltip"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:orientation="horizontal"
+        android:minHeight="50dp">
+
+        <RelativeLayout
+            android:paddingTop="3dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/money_line_circle"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@drawable/line_tooltip_circle">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/money_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="$12"
+                android:textSize="14dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="1dp"
+            android:id="@+id/car_line_circle"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@drawable/line_tooltip_circle">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/car_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="7"
+                android:textSize="14dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="14dp"
+            android:padding="0dp"
+            >
+
+
+            <TextView
+                android:textSize="12dp"
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="title"
+                android:textColor="@color/white"
+                android:layout_margin="0dp"
+                android:padding="0dp"/>
+
+            <TextView
+                android:textSize="12dp"
+                android:id="@+id/comment_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_text"
+                android:text="comments"
+                android:layout_marginTop="-5dp"
+                android:padding="0dp"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

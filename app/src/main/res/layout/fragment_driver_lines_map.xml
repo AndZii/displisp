@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.limosys.fragments.DriverLinesMapFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/driver_map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/map_and_list_buttons_panel"
+        android:clickable="true"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/map_and_list_buttons_panel"
+            android:id="@+id/driver_lines_list_view"
+            />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/driver_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/map_and_list_buttons_panel"
+        android:background="@color/fab_color"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_near_me_white_24dp"/>
+
+    <com.limosys.views.MapAndListButtonsPanel
+        android:id="@+id/map_and_list_buttons_panel"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</FrameLayout>

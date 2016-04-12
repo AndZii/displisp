@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#303030</color>
+    <color name="colorPrimaryDark">#252525</color>
+    <color name="colorAccent">#9d9d9d</color>
+    <color name="white">#f2f2f2</color>
+    <color name="title_color">#fbaa19</color>
+    <color name="info_background_dialog">#e5e5e5</color>
+    <color name="white_login_background">#EAEAEA</color>
+    <color name="button_login">#44100c0f</color>
+    <color name="fab_color">#9d9d9d</color>
+    <color name="transperent">#00444444</color>
+    <color name="spinner_back_ground">#EAEAEA</color>
+    <color name="log_in_font_black">#282828</color>
+    <color name="driver_button_map_list_active">#bebebe</color>
+    <color name="driver_button_map_list_inactive">#cccccc</color>
+</resources>

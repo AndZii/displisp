@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+       <android.support.v7.widget.AppCompatAutoCompleteTextView
+           android:id="@+id/action_dialog_title"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:gravity="left"
+           android:textSize="20dp"
+           android:background="@android:color/transparent"
+           android:editable="false"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/action_dialog_incentive_layout"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint=""
+            android:id="@+id/incentive_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:inputType="numberDecimal"/>
+        <View
+            android:layout_below="@+id/incentive_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/action_dialog_cars_required_layout"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint=""
+            android:id="@+id/cars_required_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:inputType="number"/>
+        <View
+            android:layout_below="@+id/cars_required_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/action_dialog_description_layout"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/description_edit_text"
+            android:paddingLeft="7dp"
+            android:hint="No message yet..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="5"
+            android:gravity="top"
+            android:background="@color/info_background_dialog"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/action_dialog_message_layout"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/message_edit_text"
+            android:paddingLeft="7dp"
+            android:hint="No message yet..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="5"
+            android:gravity="top"
+            android:background="@color/info_background_dialog"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="0dp"
+        android:paddingBottom="8dp">
+
+        <Button
+            android:id="@+id/message_dialog_cancel_button"
+            android:textSize="14dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:gravity="left|center_vertical"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/title_color"
+            android:text="CANCEL"
+            android:layout_toLeftOf="@+id/action_dialog_update_button"/>
+
+        <Button
+            android:layout_marginRight="-14dp"
+            android:id="@+id/action_dialog_update_button"
+            android:textSize="14dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:gravity="left|center_vertical"
+            android:layout_width="wrap_content"
+            android:minWidth="84dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/title_color"
+            android:text="UPDATE"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
